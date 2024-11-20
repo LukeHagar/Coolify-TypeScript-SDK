@@ -1,0 +1,19 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Coolify-OAS:
+        inputs:
+            - location: ./OpenAPI.yaml
+        overlays:
+            - location: ./speakeasy-suggested-name-overlay.yaml
+            - location: ./speakeasy-suggested-error-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/lukehagar/lukehagar/coolify-oas
+targets:
+    coolify:
+        target: typescript
+        source: Coolify-OAS
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/lukehagar/lukehagar/coolify-oas-code-samples
+            blocking: false

@@ -1,0 +1,1804 @@
+lockVersion: 2.0.0
+id: a63855c2-e359-4ae7-8bde-837eae0e2b3a
+management:
+  docChecksum: 68b6dd3e364a684fb03c348294f547d8
+  docVersion: "0.1"
+  speakeasyVersion: 1.441.0
+  generationVersion: 2.460.1
+  releaseVersion: 0.1.1
+  configChecksum: e70476ee292de24497eb91315ba72640
+  installationURL: https://github.com/LukeHagar/Coolify-TypeScript-SDK
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    additionalProperties: 0.1.1
+    constsAndDefaults: 0.1.11
+    core: 3.18.5
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.11
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.4
+    groups: 2.81.2
+    nameOverrides: 2.81.2
+    nullables: 0.1.0
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+    tests: 0.7.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .eslintrc.cjs
+  - .gitattributes
+  - .npmignore
+  - CONTRIBUTING.md
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/application.md
+  - docs/models/components/applicationdeploymentqueue.md
+  - docs/models/components/buildpack.md
+  - docs/models/components/environment.md
+  - docs/models/components/environmentvariable.md
+  - docs/models/components/privatekey.md
+  - docs/models/components/project.md
+  - docs/models/components/proxy.md
+  - docs/models/components/proxytype.md
+  - docs/models/components/redirect.md
+  - docs/models/components/security.md
+  - docs/models/components/server.md
+  - docs/models/components/service.md
+  - docs/models/components/team.md
+  - docs/models/components/user.md
+  - docs/models/errors/badrequest.md
+  - docs/models/errors/disableapiresponsebody.md
+  - docs/models/errors/enableapiresponsebody.md
+  - docs/models/errors/internalservererror.md
+  - docs/models/errors/notfound.md
+  - docs/models/errors/ratelimited.md
+  - docs/models/errors/timeout.md
+  - docs/models/errors/unauthenticated.md
+  - docs/models/operations/buildpack.md
+  - docs/models/operations/createdatabaseclickhouserequestbody.md
+  - docs/models/operations/createdatabasedragonflyrequestbody.md
+  - docs/models/operations/createdatabasekeydbrequestbody.md
+  - docs/models/operations/createdatabasemariadbrequestbody.md
+  - docs/models/operations/createdatabasemongodbrequestbody.md
+  - docs/models/operations/createdatabasemysqlrequestbody.md
+  - docs/models/operations/createdatabasepostgresqlrequestbody.md
+  - docs/models/operations/createdatabaseredisrequestbody.md
+  - docs/models/operations/createdockercomposeapplicationrequestbody.md
+  - docs/models/operations/createdockerfileapplicationbuildpack.md
+  - docs/models/operations/createdockerfileapplicationredirect.md
+  - docs/models/operations/createdockerfileapplicationrequestbody.md
+  - docs/models/operations/createdockerimageapplicationredirect.md
+  - docs/models/operations/createdockerimageapplicationrequestbody.md
+  - docs/models/operations/createenvbyapplicationuuidrequest.md
+  - docs/models/operations/createenvbyapplicationuuidrequestbody.md
+  - docs/models/operations/createenvbyapplicationuuidresponsebody.md
+  - docs/models/operations/createenvbyserviceuuidrequest.md
+  - docs/models/operations/createenvbyserviceuuidrequestbody.md
+  - docs/models/operations/createenvbyserviceuuidresponsebody.md
+  - docs/models/operations/createprivatedeploykeyapplicationbuildpack.md
+  - docs/models/operations/createprivatedeploykeyapplicationredirect.md
+  - docs/models/operations/createprivatedeploykeyapplicationrequestbody.md
+  - docs/models/operations/createprivatedeploykeyapplicationstaticimage.md
+  - docs/models/operations/createprivategithubappapplicationbuildpack.md
+  - docs/models/operations/createprivategithubappapplicationredirect.md
+  - docs/models/operations/createprivategithubappapplicationrequestbody.md
+  - docs/models/operations/createprivategithubappapplicationstaticimage.md
+  - docs/models/operations/createprivatekeyrequestbody.md
+  - docs/models/operations/createprivatekeyresponsebody.md
+  - docs/models/operations/createprojectrequestbody.md
+  - docs/models/operations/createprojectresponsebody.md
+  - docs/models/operations/createpublicapplicationrequestbody.md
+  - docs/models/operations/createserverrequestbody.md
+  - docs/models/operations/createserverresponsebody.md
+  - docs/models/operations/createservicerequestbody.md
+  - docs/models/operations/createserviceresponsebody.md
+  - docs/models/operations/data.md
+  - docs/models/operations/deleteapplicationbyuuidrequest.md
+  - docs/models/operations/deleteapplicationbyuuidresponsebody.md
+  - docs/models/operations/deletedatabasebyuuidrequest.md
+  - docs/models/operations/deletedatabasebyuuidresponsebody.md
+  - docs/models/operations/deleteenvbyapplicationuuidrequest.md
+  - docs/models/operations/deleteenvbyapplicationuuidresponsebody.md
+  - docs/models/operations/deleteenvbyserviceuuidrequest.md
+  - docs/models/operations/deleteenvbyserviceuuidresponsebody.md
+  - docs/models/operations/deleteprivatekeybyuuidrequest.md
+  - docs/models/operations/deleteprivatekeybyuuidresponsebody.md
+  - docs/models/operations/deleteprojectbyuuidrequest.md
+  - docs/models/operations/deleteprojectbyuuidresponsebody.md
+  - docs/models/operations/deleteserverbyuuidrequest.md
+  - docs/models/operations/deleteserverbyuuidresponsebody.md
+  - docs/models/operations/deleteservicebyuuidrequest.md
+  - docs/models/operations/deleteservicebyuuidresponsebody.md
+  - docs/models/operations/deploybytagoruuidrequest.md
+  - docs/models/operations/deploybytagoruuidresponsebody.md
+  - docs/models/operations/deployments.md
+  - docs/models/operations/disableapiresponsebody.md
+  - docs/models/operations/enableapiresponsebody.md
+  - docs/models/operations/executecommandapplicationrequest.md
+  - docs/models/operations/executecommandapplicationrequestbody.md
+  - docs/models/operations/executecommandapplicationresponsebody.md
+  - docs/models/operations/getapplicationbyuuidrequest.md
+  - docs/models/operations/getdatabasebyuuidrequest.md
+  - docs/models/operations/getdeploymentbyuuidrequest.md
+  - docs/models/operations/getdomainsbyserveruuidrequest.md
+  - docs/models/operations/getdomainsbyserveruuidresponsebody.md
+  - docs/models/operations/getenvironmentbynamerequest.md
+  - docs/models/operations/getmembersbyteamidrequest.md
+  - docs/models/operations/getprivatekeybyuuidrequest.md
+  - docs/models/operations/getprojectbyuuidrequest.md
+  - docs/models/operations/getresourcesbyserveruuidrequest.md
+  - docs/models/operations/getserverbyuuidrequest.md
+  - docs/models/operations/getservicebyuuidrequest.md
+  - docs/models/operations/getteambyidrequest.md
+  - docs/models/operations/listenvsbyapplicationuuidrequest.md
+  - docs/models/operations/listenvsbyserviceuuidrequest.md
+  - docs/models/operations/proxytype.md
+  - docs/models/operations/redirect.md
+  - docs/models/operations/responsebody.md
+  - docs/models/operations/restartapplicationbyuuidrequest.md
+  - docs/models/operations/restartapplicationbyuuidresponsebody.md
+  - docs/models/operations/restartdatabasebyuuidrequest.md
+  - docs/models/operations/restartdatabasebyuuidresponsebody.md
+  - docs/models/operations/restartservicebyuuidrequest.md
+  - docs/models/operations/restartservicebyuuidresponsebody.md
+  - docs/models/operations/startapplicationbyuuidrequest.md
+  - docs/models/operations/startapplicationbyuuidresponsebody.md
+  - docs/models/operations/startdatabasebyuuidrequest.md
+  - docs/models/operations/startdatabasebyuuidresponsebody.md
+  - docs/models/operations/startservicebyuuidrequest.md
+  - docs/models/operations/startservicebyuuidresponsebody.md
+  - docs/models/operations/staticimage.md
+  - docs/models/operations/stopapplicationbyuuidrequest.md
+  - docs/models/operations/stopapplicationbyuuidresponsebody.md
+  - docs/models/operations/stopdatabasebyuuidrequest.md
+  - docs/models/operations/stopdatabasebyuuidresponsebody.md
+  - docs/models/operations/stopservicebyuuidrequest.md
+  - docs/models/operations/stopservicebyuuidresponsebody.md
+  - docs/models/operations/type.md
+  - docs/models/operations/updateapplicationbyuuidbuildpack.md
+  - docs/models/operations/updateapplicationbyuuidredirect.md
+  - docs/models/operations/updateapplicationbyuuidrequest.md
+  - docs/models/operations/updateapplicationbyuuidrequestbody.md
+  - docs/models/operations/updateapplicationbyuuidresponsebody.md
+  - docs/models/operations/updatedatabasebyuuidrequest.md
+  - docs/models/operations/updatedatabasebyuuidrequestbody.md
+  - docs/models/operations/updateenvbyapplicationuuidrequest.md
+  - docs/models/operations/updateenvbyapplicationuuidrequestbody.md
+  - docs/models/operations/updateenvbyapplicationuuidresponsebody.md
+  - docs/models/operations/updateenvbyserviceuuidrequest.md
+  - docs/models/operations/updateenvbyserviceuuidrequestbody.md
+  - docs/models/operations/updateenvbyserviceuuidresponsebody.md
+  - docs/models/operations/updateenvsbyapplicationuuidrequest.md
+  - docs/models/operations/updateenvsbyapplicationuuidrequestbody.md
+  - docs/models/operations/updateenvsbyapplicationuuidresponsebody.md
+  - docs/models/operations/updateenvsbyserviceuuiddata.md
+  - docs/models/operations/updateenvsbyserviceuuidrequest.md
+  - docs/models/operations/updateenvsbyserviceuuidrequestbody.md
+  - docs/models/operations/updateenvsbyserviceuuidresponsebody.md
+  - docs/models/operations/updateprivatekeyrequestbody.md
+  - docs/models/operations/updateprivatekeyresponsebody.md
+  - docs/models/operations/updateprojectbyuuidrequest.md
+  - docs/models/operations/updateprojectbyuuidrequestbody.md
+  - docs/models/operations/updateprojectbyuuidresponsebody.md
+  - docs/models/operations/updateserverbyuuidproxytype.md
+  - docs/models/operations/updateserverbyuuidrequest.md
+  - docs/models/operations/updateserverbyuuidrequestbody.md
+  - docs/models/operations/validateserverbyuuidrequest.md
+  - docs/models/operations/validateserverbyuuidresponsebody.md
+  - docs/sdks/api/README.md
+  - docs/sdks/applications/README.md
+  - docs/sdks/coolify/README.md
+  - docs/sdks/databases/README.md
+  - docs/sdks/deployments/README.md
+  - docs/sdks/health/README.md
+  - docs/sdks/privatekeys/README.md
+  - docs/sdks/projects/README.md
+  - docs/sdks/resources/README.md
+  - docs/sdks/servers/README.md
+  - docs/sdks/services/README.md
+  - docs/sdks/teams/README.md
+  - docs/sdks/version/README.md
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/apiDisable.ts
+  - src/funcs/apiEnable.ts
+  - src/funcs/applicationsCreateDockerCompose.ts
+  - src/funcs/applicationsCreateDockerImage.ts
+  - src/funcs/applicationsCreateDockerfile.ts
+  - src/funcs/applicationsCreateEnv.ts
+  - src/funcs/applicationsCreatePrivateDeployKey.ts
+  - src/funcs/applicationsCreatePrivateGithubApp.ts
+  - src/funcs/applicationsCreatePublic.ts
+  - src/funcs/applicationsDelete.ts
+  - src/funcs/applicationsDeleteEnv.ts
+  - src/funcs/applicationsExecuteCommand.ts
+  - src/funcs/applicationsGet.ts
+  - src/funcs/applicationsList.ts
+  - src/funcs/applicationsListEnvs.ts
+  - src/funcs/applicationsRestart.ts
+  - src/funcs/applicationsStart.ts
+  - src/funcs/applicationsStop.ts
+  - src/funcs/applicationsUpdate.ts
+  - src/funcs/applicationsUpdateEnv.ts
+  - src/funcs/applicationsUpdateEnvsBulk.ts
+  - src/funcs/databasesCreateClickhouse.ts
+  - src/funcs/databasesCreateDragonfly.ts
+  - src/funcs/databasesCreateKeydb.ts
+  - src/funcs/databasesCreateMariadb.ts
+  - src/funcs/databasesCreateMongodb.ts
+  - src/funcs/databasesCreateMysql.ts
+  - src/funcs/databasesCreatePostgresql.ts
+  - src/funcs/databasesCreateRedis.ts
+  - src/funcs/databasesDelete.ts
+  - src/funcs/databasesGet.ts
+  - src/funcs/databasesList.ts
+  - src/funcs/databasesRestart.ts
+  - src/funcs/databasesStart.ts
+  - src/funcs/databasesStop.ts
+  - src/funcs/databasesUpdate.ts
+  - src/funcs/deploymentsDeployByTagOrUuid.ts
+  - src/funcs/deploymentsGet.ts
+  - src/funcs/deploymentsList.ts
+  - src/funcs/healthCheck.ts
+  - src/funcs/privateKeysCreate.ts
+  - src/funcs/privateKeysDelete.ts
+  - src/funcs/privateKeysGet.ts
+  - src/funcs/privateKeysList.ts
+  - src/funcs/privateKeysUpdate.ts
+  - src/funcs/projectsCreate.ts
+  - src/funcs/projectsDelete.ts
+  - src/funcs/projectsGet.ts
+  - src/funcs/projectsGetEnvironment.ts
+  - src/funcs/projectsList.ts
+  - src/funcs/projectsUpdate.ts
+  - src/funcs/resourcesList.ts
+  - src/funcs/serversCreate.ts
+  - src/funcs/serversDelete.ts
+  - src/funcs/serversGet.ts
+  - src/funcs/serversGetDomains.ts
+  - src/funcs/serversGetResources.ts
+  - src/funcs/serversList.ts
+  - src/funcs/serversUpdate.ts
+  - src/funcs/serversValidate.ts
+  - src/funcs/servicesCreate.ts
+  - src/funcs/servicesCreateEnv.ts
+  - src/funcs/servicesDelete.ts
+  - src/funcs/servicesDeleteEnv.ts
+  - src/funcs/servicesGet.ts
+  - src/funcs/servicesList.ts
+  - src/funcs/servicesListEnvs.ts
+  - src/funcs/servicesRestart.ts
+  - src/funcs/servicesStart.ts
+  - src/funcs/servicesStop.ts
+  - src/funcs/servicesUpdateEnv.ts
+  - src/funcs/servicesUpdateEnvsBulk.ts
+  - src/funcs/teamsGet.ts
+  - src/funcs/teamsGetCurrent.ts
+  - src/funcs/teamsGetCurrentMembers.ts
+  - src/funcs/teamsGetMembers.ts
+  - src/funcs/teamsList.ts
+  - src/funcs/versionGet.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/components/application.ts
+  - src/models/components/applicationdeploymentqueue.ts
+  - src/models/components/environment.ts
+  - src/models/components/environmentvariable.ts
+  - src/models/components/index.ts
+  - src/models/components/privatekey.ts
+  - src/models/components/project.ts
+  - src/models/components/security.ts
+  - src/models/components/server.ts
+  - src/models/components/service.ts
+  - src/models/components/team.ts
+  - src/models/components/user.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/badrequest.ts
+  - src/models/errors/disableapi.ts
+  - src/models/errors/enableapi.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/internalservererror.ts
+  - src/models/errors/notfound.ts
+  - src/models/errors/ratelimited.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/errors/timeout.ts
+  - src/models/errors/unauthenticated.ts
+  - src/models/operations/createdatabaseclickhouse.ts
+  - src/models/operations/createdatabasedragonfly.ts
+  - src/models/operations/createdatabasekeydb.ts
+  - src/models/operations/createdatabasemariadb.ts
+  - src/models/operations/createdatabasemongodb.ts
+  - src/models/operations/createdatabasemysql.ts
+  - src/models/operations/createdatabasepostgresql.ts
+  - src/models/operations/createdatabaseredis.ts
+  - src/models/operations/createdockercomposeapplication.ts
+  - src/models/operations/createdockerfileapplication.ts
+  - src/models/operations/createdockerimageapplication.ts
+  - src/models/operations/createenvbyapplicationuuid.ts
+  - src/models/operations/createenvbyserviceuuid.ts
+  - src/models/operations/createprivatedeploykeyapplication.ts
+  - src/models/operations/createprivategithubappapplication.ts
+  - src/models/operations/createprivatekey.ts
+  - src/models/operations/createproject.ts
+  - src/models/operations/createpublicapplication.ts
+  - src/models/operations/createserver.ts
+  - src/models/operations/createservice.ts
+  - src/models/operations/deleteapplicationbyuuid.ts
+  - src/models/operations/deletedatabasebyuuid.ts
+  - src/models/operations/deleteenvbyapplicationuuid.ts
+  - src/models/operations/deleteenvbyserviceuuid.ts
+  - src/models/operations/deleteprivatekeybyuuid.ts
+  - src/models/operations/deleteprojectbyuuid.ts
+  - src/models/operations/deleteserverbyuuid.ts
+  - src/models/operations/deleteservicebyuuid.ts
+  - src/models/operations/deploybytagoruuid.ts
+  - src/models/operations/disableapi.ts
+  - src/models/operations/enableapi.ts
+  - src/models/operations/executecommandapplication.ts
+  - src/models/operations/getapplicationbyuuid.ts
+  - src/models/operations/getdatabasebyuuid.ts
+  - src/models/operations/getdeploymentbyuuid.ts
+  - src/models/operations/getdomainsbyserveruuid.ts
+  - src/models/operations/getenvironmentbyname.ts
+  - src/models/operations/getmembersbyteamid.ts
+  - src/models/operations/getprivatekeybyuuid.ts
+  - src/models/operations/getprojectbyuuid.ts
+  - src/models/operations/getresourcesbyserveruuid.ts
+  - src/models/operations/getserverbyuuid.ts
+  - src/models/operations/getservicebyuuid.ts
+  - src/models/operations/getteambyid.ts
+  - src/models/operations/index.ts
+  - src/models/operations/listenvsbyapplicationuuid.ts
+  - src/models/operations/listenvsbyserviceuuid.ts
+  - src/models/operations/restartapplicationbyuuid.ts
+  - src/models/operations/restartdatabasebyuuid.ts
+  - src/models/operations/restartservicebyuuid.ts
+  - src/models/operations/startapplicationbyuuid.ts
+  - src/models/operations/startdatabasebyuuid.ts
+  - src/models/operations/startservicebyuuid.ts
+  - src/models/operations/stopapplicationbyuuid.ts
+  - src/models/operations/stopdatabasebyuuid.ts
+  - src/models/operations/stopservicebyuuid.ts
+  - src/models/operations/updateapplicationbyuuid.ts
+  - src/models/operations/updatedatabasebyuuid.ts
+  - src/models/operations/updateenvbyapplicationuuid.ts
+  - src/models/operations/updateenvbyserviceuuid.ts
+  - src/models/operations/updateenvsbyapplicationuuid.ts
+  - src/models/operations/updateenvsbyserviceuuid.ts
+  - src/models/operations/updateprivatekey.ts
+  - src/models/operations/updateprojectbyuuid.ts
+  - src/models/operations/updateserverbyuuid.ts
+  - src/models/operations/validateserverbyuuid.ts
+  - src/sdk/api.ts
+  - src/sdk/applications.ts
+  - src/sdk/databases.ts
+  - src/sdk/deployments.ts
+  - src/sdk/health.ts
+  - src/sdk/index.ts
+  - src/sdk/privatekeys.ts
+  - src/sdk/projects.ts
+  - src/sdk/resources.ts
+  - src/sdk/sdk.ts
+  - src/sdk/servers.ts
+  - src/sdk/services.ts
+  - src/sdk/teams.ts
+  - src/sdk/version.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  version:
+    "":
+      responses:
+        "200":
+          application/json: "v4.0.0"
+  enable-api:
+    speakeasy-default-enable-api:
+      responses:
+        "200":
+          application/json: {"message": "API enabled."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "403":
+          application/json: {"message": "You are not allowed to enable the API."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  disable-api:
+    speakeasy-default-disable-api:
+      responses:
+        "200":
+          application/json: {"message": "API disabled."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "403":
+          application/json: {"message": "You are not allowed to disable the API."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  healthcheck:
+    "":
+      responses:
+        "200":
+          application/json: "OK"
+  list-applications:
+    speakeasy-default-list-applications:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-public-application:
+    speakeasy-default-create-public-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "git_repository": "<value>", "git_branch": "<value>", "build_pack": "nixpacks", "ports_exposes": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-private-github-app-application:
+    speakeasy-default-create-private-github-app-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "github_app_uuid": "<id>", "git_repository": "<value>", "git_branch": "<value>", "ports_exposes": "<value>", "build_pack": "dockerfile"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-private-deploy-key-application:
+    speakeasy-default-create-private-deploy-key-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "private_key_uuid": "<id>", "git_repository": "<value>", "git_branch": "<value>", "ports_exposes": "<value>", "build_pack": "static"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  create-dockerfile-application:
+    speakeasy-default-create-dockerfile-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "dockerfile": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-dockerimage-application:
+    speakeasy-default-create-dockerimage-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "docker_registry_image_name": "<value>", "ports_exposes": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-dockercompose-application:
+    speakeasy-default-create-dockercompose-application:
+      requestBody:
+        application/json: {"project_uuid": "<id>", "server_uuid": "<id>", "environment_name": "<value>", "docker_compose_raw": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  get-application-by-uuid:
+    speakeasy-default-get-application-by-uuid:
+      parameters:
+        path:
+          uuid: "61f687df-a2c6-49ae-927c-701e1869129c"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  delete-application-by-uuid:
+    speakeasy-default-delete-application-by-uuid:
+      parameters:
+        path:
+          uuid: "b7774d3f-40ad-4c95-8c81-888632bd34e1"
+        query: {}
+      responses:
+        "200":
+          application/json: {"message": "Application deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-application-by-uuid:
+    speakeasy-default-update-application-by-uuid:
+      parameters:
+        path:
+          uuid: "2dd6d1b1-2896-4369-b2ed-d1789d4abe06"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  list-envs-by-application-uuid:
+    speakeasy-default-list-envs-by-application-uuid:
+      parameters:
+        path:
+          uuid: "c1cca4f0-5746-4721-9989-b05fee4a02e4"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-env-by-application-uuid:
+    speakeasy-default-create-env-by-application-uuid:
+      parameters:
+        path:
+          uuid: "41e7ad1e-bfed-46b3-b163-d6b1de04f2c9"
+      responses:
+        "201":
+          application/json: {"uuid": "nc0k04gk8g0cgsk440g0koko"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500": {}
+  update-env-by-application-uuid:
+    speakeasy-default-update-env-by-application-uuid:
+      parameters:
+        path:
+          uuid: "38636143-32bc-410a-bf25-57be00b8a243"
+      requestBody:
+        application/json: {"key": "<key>", "value": "<value>"}
+      responses:
+        "201":
+          application/json: {"message": "Environment variable updated."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-envs-by-application-uuid:
+    speakeasy-default-update-envs-by-application-uuid:
+      parameters:
+        path:
+          uuid: "0a6652ad-7216-4c18-9026-f7327599db39"
+      requestBody:
+        application/json: {"data": []}
+      responses:
+        "201":
+          application/json: {"message": "Environment variables updated."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  delete-env-by-application-uuid:
+    speakeasy-default-delete-env-by-application-uuid:
+      parameters:
+        path:
+          uuid: "29178270-449b-4b61-8c4c-a70fe8abfb71"
+          env_uuid: "33106c3f-066e-4bc0-aa2c-bde0210b2cd0"
+      responses:
+        "200":
+          application/json: {"message": "Environment variable deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  start-application-by-uuid:
+    speakeasy-default-start-application-by-uuid:
+      parameters:
+        path:
+          uuid: "572630a1-cd73-4275-880b-f045ee102419"
+        query: {}
+      responses:
+        "200":
+          application/json: {"message": "Deployment request queued.", "deployment_uuid": "doogksw"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  stop-application-by-uuid:
+    speakeasy-default-stop-application-by-uuid:
+      parameters:
+        path:
+          uuid: "c7f49fe8-2360-46f6-9bda-86c275c44858"
+      responses:
+        "200":
+          application/json: {"message": "Application stopping request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  restart-application-by-uuid:
+    speakeasy-default-restart-application-by-uuid:
+      parameters:
+        path:
+          uuid: "f6e08c98-9f12-4fa8-a341-05b629d9a23a"
+      responses:
+        "200":
+          application/json: {"message": "Restart request queued.", "deployment_uuid": "doogksw"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  execute-command-application:
+    speakeasy-default-execute-command-application:
+      parameters:
+        path:
+          uuid: "5be3e72e-82ca-4e4e-862e-5e0cf0b853f6"
+      responses:
+        "200":
+          application/json: {"message": "Command executed."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  list-databases:
+    "":
+      responses:
+        "200":
+          application/json: "Content is very complex. Will be implemented later."
+  get-database-by-uuid:
+    "":
+      parameters:
+        path:
+          uuid: "74d5589b-49ac-48d8-81bc-d384b1e22591"
+      responses:
+        "200":
+          application/json: "Content is very complex. Will be implemented later."
+  delete-database-by-uuid:
+    speakeasy-default-delete-database-by-uuid:
+      parameters:
+        path:
+          uuid: "97d3b16d-4e3e-43de-90da-8825514f9704"
+        query: {}
+      responses:
+        "200":
+          application/json: {"message": "Database deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-database-by-uuid:
+    speakeasy-default-update-database-by-uuid:
+      parameters:
+        path:
+          uuid: "8ce069c2-b9ca-4606-a156-f18931ac7716"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-database-postgresql:
+    speakeasy-default-create-database-postgresql:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  create-database-clickhouse:
+    speakeasy-default-create-database-clickhouse:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  create-database-dragonfly:
+    speakeasy-default-create-database-dragonfly:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-database-redis:
+    speakeasy-default-create-database-redis:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-database-keydb:
+    speakeasy-default-create-database-keydb:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-database-mariadb:
+    speakeasy-default-create-database-mariadb:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  create-database-mysql:
+    speakeasy-default-create-database-mysql:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-database-mongodb:
+    speakeasy-default-create-database-mongodb:
+      requestBody:
+        application/json: {"server_uuid": "<id>", "project_uuid": "<id>", "environment_name": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  start-database-by-uuid:
+    speakeasy-default-start-database-by-uuid:
+      parameters:
+        path:
+          uuid: "f40511cd-7fe9-4acb-ba62-b4ed38ad7597"
+      responses:
+        "200":
+          application/json: {"message": "Database starting request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  stop-database-by-uuid:
+    speakeasy-default-stop-database-by-uuid:
+      parameters:
+        path:
+          uuid: "3833eaa9-ac55-4488-907b-122d1dc43961"
+      responses:
+        "200":
+          application/json: {"message": "Database stopping request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  restart-database-by-uuid:
+    speakeasy-default-restart-database-by-uuid:
+      parameters:
+        path:
+          uuid: "87eeb84f-bfe7-4d69-be6c-c4602521ac1a"
+      responses:
+        "200":
+          application/json: {"message": "Database restaring request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  list-deployments:
+    speakeasy-default-list-deployments:
+      responses:
+        "200":
+          application/json: []
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  get-deployment-by-uuid:
+    speakeasy-default-get-deployment-by-uuid:
+      parameters:
+        path:
+          uuid: "2ad7d3d7-960f-4230-bfe2-5ed5941b0a65"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  deploy-by-tag-or-uuid:
+    speakeasy-default-deploy-by-tag-or-uuid:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  list-projects:
+    speakeasy-default-list-projects:
+      responses:
+        "200":
+          application/json: []
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-project:
+    speakeasy-default-create-project:
+      responses:
+        "201":
+          application/json: {"uuid": "og888os"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-project-by-uuid:
+    speakeasy-default-get-project-by-uuid:
+      parameters:
+        path:
+          uuid: "8ee4c350-f599-4db3-ad60-4e858f981b76"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "501":
+          application/json: {"message": "Resource not found."}
+  delete-project-by-uuid:
+    speakeasy-default-delete-project-by-uuid:
+      parameters:
+        path:
+          uuid: "9e5be611-8766-4db1-9ad7-f03e9284084f"
+      responses:
+        "200":
+          application/json: {"message": "Project deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-project-by-uuid:
+    speakeasy-default-update-project-by-uuid:
+      parameters:
+        path:
+          uuid: "d493415b-6548-4c8b-8e4a-d0ae131f3835"
+      responses:
+        "201":
+          application/json: {"uuid": "og888os", "name": "Project Name", "description": "Project Description"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-environment-by-name:
+    speakeasy-default-get-environment-by-name:
+      parameters:
+        path:
+          uuid: "d9b108d3-6f92-44fb-9c22-b9c31c745f88"
+          environment_name: "<value>"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408": {}
+        "429": {}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  list-resources:
+    "":
+      responses:
+        "200":
+          application/json: "Content is very complex. Will be implemented later."
+  list-private-keys:
+    speakeasy-default-list-private-keys:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-private-key:
+    speakeasy-default-create-private-key:
+      requestBody:
+        application/json: {"private_key": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "201": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-private-key:
+    speakeasy-default-update-private-key:
+      requestBody:
+        application/json: {"private_key": "<value>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "201": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-private-key-by-uuid:
+    speakeasy-default-get-private-key-by-uuid:
+      parameters:
+        path:
+          uuid: "de612435-5d53-45e6-bbe3-7f2c13a14f66"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "501":
+          application/json: {"message": "Resource not found."}
+  delete-private-key-by-uuid:
+    speakeasy-default-delete-private-key-by-uuid:
+      parameters:
+        path:
+          uuid: "d12ec548-7853-4eb5-ad51-3372962d2e05"
+      responses:
+        "200":
+          application/json: {"message": "Private Key deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+        "501":
+          application/json: {"message": "Resource not found."}
+  list-servers:
+    speakeasy-default-list-servers:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-server:
+    speakeasy-default-create-server:
+      requestBody:
+        application/json: {"name": "My Server", "description": "My Server Description", "ip": "127.0.0.1", "port": 22, "user": "root", "private_key_uuid": "og888os", "is_build_server": false, "instant_validate": false, "proxy_type": "traefik"}
+      responses:
+        "201":
+          application/json: {"uuid": "og888os"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-server-by-uuid:
+    speakeasy-default-get-server-by-uuid:
+      parameters:
+        path:
+          uuid: "878632ca-cced-4853-8da6-87221abec029"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  delete-server-by-uuid:
+    speakeasy-default-delete-server-by-uuid:
+      parameters:
+        path:
+          uuid: "183d3ea1-6bc7-4679-83e6-ee71ea432238"
+      responses:
+        "200":
+          application/json: {"message": "Server deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-server-by-uuid:
+    speakeasy-default-update-server-by-uuid:
+      parameters:
+        path:
+          uuid: "1c295953-9423-418a-96cd-0fd6e1b41a9e"
+      responses:
+        "201":
+          application/json: []
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-resources-by-server-uuid:
+    speakeasy-default-get-resources-by-server-uuid:
+      parameters:
+        path:
+          uuid: "ce37b3ba-2b08-4d5d-9238-c6a5920c72c9"
+      responses:
+        "200":
+          application/json: []
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  get-domains-by-server-uuid:
+    speakeasy-default-get-domains-by-server-uuid:
+      parameters:
+        path:
+          uuid: "03ea70d2-cdac-4a42-b170-cbba7d1cffcf"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200":
+          application/json: []
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  validate-server-by-uuid:
+    speakeasy-default-validate-server-by-uuid:
+      parameters:
+        path:
+          uuid: "ef3bad97-f956-4f33-8e23-85d6e694004d"
+      responses:
+        "201":
+          application/json: {"message": "Validation started."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500": {}
+  list-services:
+    speakeasy-default-list-services:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  create-service:
+    speakeasy-default-create-service:
+      requestBody:
+        application/json: {"type": "gitea", "project_uuid": "<id>", "environment_name": "<value>", "server_uuid": "<id>"}
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "201": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-service-by-uuid:
+    speakeasy-default-get-service-by-uuid:
+      parameters:
+        path:
+          uuid: "5639b38b-4535-4e45-a890-384cf735116d"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  delete-service-by-uuid:
+    speakeasy-default-delete-service-by-uuid:
+      parameters:
+        path:
+          uuid: "14cb9244-2326-4bec-9c7e-4b61cdd548f5"
+        query: {}
+      responses:
+        "200":
+          application/json: {"message": "Service deletion request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  list-envs-by-service-uuid:
+    speakeasy-default-list-envs-by-service-uuid:
+      parameters:
+        path:
+          uuid: "ef4a6137-8bba-4132-909e-72f1b2d26d47"
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  create-env-by-service-uuid:
+    speakeasy-default-create-env-by-service-uuid:
+      parameters:
+        path:
+          uuid: "b793dd27-7b05-40e6-b80c-e49c6dd37147"
+      responses:
+        "201":
+          application/json: {"uuid": "nc0k04gk8g0cgsk440g0koko"}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500": {}
+  update-env-by-service-uuid:
+    speakeasy-default-update-env-by-service-uuid:
+      parameters:
+        path:
+          uuid: "37d5d3ba-c274-48f2-818c-6ab32dbc0de2"
+      requestBody:
+        application/json: {"key": "<key>", "value": "<value>"}
+      responses:
+        "201":
+          application/json: {"message": "Environment variable updated."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  update-envs-by-service-uuid:
+    speakeasy-default-update-envs-by-service-uuid:
+      parameters:
+        path:
+          uuid: "b88c7e0b-d8f9-4138-bf33-e97852e42e37"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {"message": "Environment variables updated."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  delete-env-by-service-uuid:
+    speakeasy-default-delete-env-by-service-uuid:
+      parameters:
+        path:
+          uuid: "6b5e4a6b-40ac-4774-b639-b27d9c59c9a2"
+          env_uuid: "b300b74f-72ea-4848-85d3-4b61a952165c"
+      responses:
+        "200":
+          application/json: {"message": "Environment variable deleted."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  start-service-by-uuid:
+    speakeasy-default-start-service-by-uuid:
+      parameters:
+        path:
+          uuid: "230d98c7-fc68-4357-9260-dd6c6394ea60"
+      responses:
+        "200":
+          application/json: {"message": "Service starting request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  stop-service-by-uuid:
+    speakeasy-default-stop-service-by-uuid:
+      parameters:
+        path:
+          uuid: "578100c6-9564-4ccb-94f7-ce1dfb7b5d65"
+      responses:
+        "200":
+          application/json: {"message": "Service stopping request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  restart-service-by-uuid:
+    speakeasy-default-restart-service-by-uuid:
+      parameters:
+        path:
+          uuid: "c5048915-c301-46b1-9a79-4a3ae47609b2"
+      responses:
+        "200":
+          application/json: {"message": "Service restaring request queued."}
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  list-teams:
+    speakeasy-default-list-teams:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  get-team-by-id:
+    speakeasy-default-get-team-by-id:
+      parameters:
+        path:
+          id: 393445
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>"}
+  get-members-by-team-id:
+    speakeasy-default-get-members-by-team-id:
+      parameters:
+        path:
+          id: 272299
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "200": {}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>"}
+  get-current-team:
+    speakeasy-default-get-current-team:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408": {}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  get-current-team-members:
+    speakeasy-default-get-current-team-members:
+      responses:
+        "400":
+          application/json: {"message": "Invalid token."}
+        "401":
+          application/json: {"message": "Unauthenticated."}
+        "200": {}
+        "404":
+          application/json: {"message": "Resource not found."}
+        "408":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "429":
+          application/json: {"key": "<value>", "key1": "<value>"}
+        "500":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}

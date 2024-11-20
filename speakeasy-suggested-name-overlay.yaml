@@ -1,0 +1,560 @@
+overlay: 1.0.0
+info:
+  title: Speakeasy Suggestions - Coolify
+  version: 0.0.1
+actions:
+  - target: $["paths"]["/servers/{uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.servers.delete()
+      before: sdk.Servers.delete-server-by-uuid()
+      type: method-name
+  - target: $["paths"]["/disable"]["get"]
+    update:
+      x-speakeasy-group: api
+      x-speakeasy-name-override: disable
+    x-speakeasy-metadata:
+      after: sdk.api.disable()
+      before: sdk.<no_group>.disable-api()
+      type: method-name
+  - target: $["paths"]["/servers"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.servers.create()
+      before: sdk.Servers.create-server()
+      type: method-name
+  - target: $["paths"]["/teams"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.teams.list()
+      before: sdk.Teams.list-teams()
+      type: method-name
+  - target: $["paths"]["/security/keys/{uuid}"]["delete"]
+    update:
+      x-speakeasy-group: privateKeys
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.privateKeys.delete()
+      before: sdk.Private Keys.delete-private-key-by-uuid()
+      type: method-name
+  - target: $["paths"]["/databases"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.databases.list()
+      before: sdk.Databases.list-databases()
+      type: method-name
+  - target: $["paths"]["/teams/{id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.teams.get()
+      before: sdk.Teams.get-team-by-id()
+      type: method-name
+  - target: $["paths"]["/databases/mariadb"]["post"]
+    update:
+      x-speakeasy-name-override: createMariadb
+    x-speakeasy-metadata:
+      after: sdk.databases.createMariadb()
+      before: sdk.Databases.create-database-mariadb()
+      type: method-name
+  - target: $["paths"]["/servers/{uuid}/domains"]["get"]
+    update:
+      x-speakeasy-name-override: getDomains
+    x-speakeasy-metadata:
+      after: sdk.servers.getDomains()
+      before: sdk.Servers.get-domains-by-server-uuid()
+      type: method-name
+  - target: $["paths"]["/resources"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.resources.list()
+      before: sdk.Resources.list-resources()
+      type: method-name
+  - target: $["paths"]["/projects/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.projects.get()
+      before: sdk.Projects.get-project-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/envs"]["get"]
+    update:
+      x-speakeasy-name-override: listEnvs
+    x-speakeasy-metadata:
+      after: sdk.applications.listEnvs()
+      before: sdk.Applications.list-envs-by-application-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/clickhouse"]["post"]
+    update:
+      x-speakeasy-name-override: createClickhouse
+    x-speakeasy-metadata:
+      after: sdk.databases.createClickhouse()
+      before: sdk.Databases.create-database-clickhouse()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.applications.get()
+      before: sdk.Applications.get-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/security/keys"]["get"]
+    update:
+      x-speakeasy-name-override: list
+      x-speakeasy-group: privateKeys
+    x-speakeasy-metadata:
+      after: sdk.privateKeys.list()
+      before: sdk.Private Keys.list-private-keys()
+      type: method-name
+  - target: $["paths"]["/version"]["get"]
+    update:
+      x-speakeasy-group: version
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.version.get()
+      before: sdk.<no_group>.version()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.services.delete()
+      before: sdk.Services.delete-service-by-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.databases.delete()
+      before: sdk.Databases.delete-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/servers/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.servers.get()
+      before: sdk.Servers.get-server-by-uuid()
+      type: method-name
+  - target: $["paths"]["/servers/{uuid}/resources"]["get"]
+    update:
+      x-speakeasy-name-override: getResources
+    x-speakeasy-metadata:
+      after: sdk.servers.getResources()
+      before: sdk.Servers.get-resources-by-server-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/dockercompose"]["post"]
+    update:
+      x-speakeasy-name-override: createDockerCompose
+    x-speakeasy-metadata:
+      after: sdk.applications.createDockerCompose()
+      before: sdk.Applications.create-dockercompose-application()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.applications.delete()
+      before: sdk.Applications.delete-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/execute"]["post"]
+    update:
+      x-speakeasy-name-override: executeCommand
+    x-speakeasy-metadata:
+      after: sdk.applications.executeCommand()
+      before: sdk.Applications.execute-command-application()
+      type: method-name
+  - target: $["paths"]["/deployments"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.deployments.list()
+      before: sdk.Deployments.list-deployments()
+      type: method-name
+  - target: $["paths"]["/databases/mongodb"]["post"]
+    update:
+      x-speakeasy-name-override: createMongodb
+    x-speakeasy-metadata:
+      after: sdk.databases.createMongodb()
+      before: sdk.Databases.create-database-mongodb()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}/start"]["get"]
+    update:
+      x-speakeasy-name-override: start
+    x-speakeasy-metadata:
+      after: sdk.databases.start()
+      before: sdk.Databases.start-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/servers/{uuid}/validate"]["get"]
+    update:
+      x-speakeasy-name-override: validate
+    x-speakeasy-metadata:
+      after: sdk.servers.validate()
+      before: sdk.Servers.validate-server-by-uuid()
+      type: method-name
+  - target: $["paths"]["/teams/current"]["get"]
+    update:
+      x-speakeasy-name-override: getCurrent
+    x-speakeasy-metadata:
+      after: sdk.teams.getCurrent()
+      before: sdk.Teams.get-current-team()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/envs"]["patch"]
+    update:
+      x-speakeasy-name-override: updateEnv
+    x-speakeasy-metadata:
+      after: sdk.applications.updateEnv()
+      before: sdk.Applications.update-env-by-application-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/dockerimage"]["post"]
+    update:
+      x-speakeasy-name-override: createDockerImage
+    x-speakeasy-metadata:
+      after: sdk.applications.createDockerImage()
+      before: sdk.Applications.create-dockerimage-application()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}"]["patch"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.databases.update()
+      before: sdk.Databases.update-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/envs/bulk"]["patch"]
+    update:
+      x-speakeasy-name-override: updateEnvsBulk
+    x-speakeasy-metadata:
+      after: sdk.services.updateEnvsBulk()
+      before: sdk.Services.update-envs-by-service-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/public"]["post"]
+    update:
+      x-speakeasy-name-override: createPublic
+    x-speakeasy-metadata:
+      after: sdk.applications.createPublic()
+      before: sdk.Applications.create-public-application()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/envs/bulk"]["patch"]
+    update:
+      x-speakeasy-name-override: updateEnvsBulk
+    x-speakeasy-metadata:
+      after: sdk.applications.updateEnvsBulk()
+      before: sdk.Applications.update-envs-by-application-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/keydb"]["post"]
+    update:
+      x-speakeasy-name-override: createKeydb
+    x-speakeasy-metadata:
+      after: sdk.databases.createKeydb()
+      before: sdk.Databases.create-database-keydb()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/envs/{env_uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: deleteEnv
+    x-speakeasy-metadata:
+      after: sdk.services.deleteEnv()
+      before: sdk.Services.delete-env-by-service-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/redis"]["post"]
+    update:
+      x-speakeasy-name-override: createRedis
+    x-speakeasy-metadata:
+      after: sdk.databases.createRedis()
+      before: sdk.Databases.create-database-redis()
+      type: method-name
+  - target: $["paths"]["/teams/{id}/members"]["get"]
+    update:
+      x-speakeasy-name-override: getMembers
+    x-speakeasy-metadata:
+      after: sdk.teams.getMembers()
+      before: sdk.Teams.get-members-by-team-id()
+      type: method-name
+  - target: $["paths"]["/servers/{uuid}"]["patch"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.servers.update()
+      before: sdk.Servers.update-server-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/private-github-app"]["post"]
+    update:
+      x-speakeasy-name-override: createPrivateGithubApp
+    x-speakeasy-metadata:
+      after: sdk.applications.createPrivateGithubApp()
+      before: sdk.Applications.create-private-github-app-application()
+      type: method-name
+  - target: $["paths"]["/applications/private-deploy-key"]["post"]
+    update:
+      x-speakeasy-name-override: createPrivateDeployKey
+    x-speakeasy-metadata:
+      after: sdk.applications.createPrivateDeployKey()
+      before: sdk.Applications.create-private-deploy-key-application()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}/restart"]["get"]
+    update:
+      x-speakeasy-name-override: restart
+    x-speakeasy-metadata:
+      after: sdk.databases.restart()
+      before: sdk.Databases.restart-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/start"]["get"]
+    update:
+      x-speakeasy-name-override: start
+    x-speakeasy-metadata:
+      after: sdk.services.start()
+      before: sdk.Services.start-service-by-uuid()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/stop"]["get"]
+    update:
+      x-speakeasy-name-override: stop
+    x-speakeasy-metadata:
+      after: sdk.services.stop()
+      before: sdk.Services.stop-service-by-uuid()
+      type: method-name
+  - target: $["paths"]["/security/keys/{uuid}"]["get"]
+    update:
+      x-speakeasy-group: privateKeys
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.privateKeys.get()
+      before: sdk.Private Keys.get-private-key-by-uuid()
+      type: method-name
+  - target: $["paths"]["/services"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.services.list()
+      before: sdk.Services.list-services()
+      type: method-name
+  - target: $["paths"]["/projects"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.projects.list()
+      before: sdk.Projects.list-projects()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/envs"]["get"]
+    update:
+      x-speakeasy-name-override: listEnvs
+    x-speakeasy-metadata:
+      after: sdk.services.listEnvs()
+      before: sdk.Services.list-envs-by-service-uuid()
+      type: method-name
+  - target: $["paths"]["/teams/current/members"]["get"]
+    update:
+      x-speakeasy-name-override: getCurrentMembers
+    x-speakeasy-metadata:
+      after: sdk.teams.getCurrentMembers()
+      before: sdk.Teams.get-current-team-members()
+      type: method-name
+  - target: $["paths"]["/services"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.services.create()
+      before: sdk.Services.create-service()
+      type: method-name
+  - target: $["paths"]["/projects/{uuid}/{environment_name}"]["get"]
+    update:
+      x-speakeasy-name-override: getEnvironment
+    x-speakeasy-metadata:
+      after: sdk.projects.getEnvironment()
+      before: sdk.Projects.get-environment-by-name()
+      type: method-name
+  - target: $["paths"]["/projects"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.projects.create()
+      before: sdk.Projects.create-project()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/envs"]["post"]
+    update:
+      x-speakeasy-name-override: createEnv
+    x-speakeasy-metadata:
+      after: sdk.services.createEnv()
+      before: sdk.Services.create-env-by-service-uuid()
+      type: method-name
+  - target: $["paths"]["/enable"]["get"]
+    update:
+      x-speakeasy-group: api
+      x-speakeasy-name-override: enable
+    x-speakeasy-metadata:
+      after: sdk.api.enable()
+      before: sdk.<no_group>.enable-api()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/envs"]["patch"]
+    update:
+      x-speakeasy-name-override: updateEnv
+    x-speakeasy-metadata:
+      after: sdk.services.updateEnv()
+      before: sdk.Services.update-env-by-service-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/start"]["get"]
+    update:
+      x-speakeasy-name-override: start
+    x-speakeasy-metadata:
+      after: sdk.applications.start()
+      before: sdk.Applications.start-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/deployments/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.deployments.get()
+      before: sdk.Deployments.get-deployment-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}"]["patch"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.applications.update()
+      before: sdk.Applications.update-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/projects/{uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.projects.delete()
+      before: sdk.Projects.delete-project-by-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/mysql"]["post"]
+    update:
+      x-speakeasy-name-override: createMysql
+    x-speakeasy-metadata:
+      after: sdk.databases.createMysql()
+      before: sdk.Databases.create-database-mysql()
+      type: method-name
+  - target: $["paths"]["/databases/dragonfly"]["post"]
+    update:
+      x-speakeasy-name-override: createDragonfly
+    x-speakeasy-metadata:
+      after: sdk.databases.createDragonfly()
+      before: sdk.Databases.create-database-dragonfly()
+      type: method-name
+  - target: $["paths"]["/projects/{uuid}"]["patch"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.projects.update()
+      before: sdk.Projects.update-project-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/stop"]["get"]
+    update:
+      x-speakeasy-name-override: stop
+    x-speakeasy-metadata:
+      after: sdk.applications.stop()
+      before: sdk.Applications.stop-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/security/keys"]["post"]
+    update:
+      x-speakeasy-group: privateKeys
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.privateKeys.create()
+      before: sdk.Private Keys.create-private-key()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/restart"]["get"]
+    update:
+      x-speakeasy-name-override: restart
+    x-speakeasy-metadata:
+      after: sdk.applications.restart()
+      before: sdk.Applications.restart-application-by-uuid()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}/stop"]["get"]
+    update:
+      x-speakeasy-name-override: stop
+    x-speakeasy-metadata:
+      after: sdk.databases.stop()
+      before: sdk.Databases.stop-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/deploy"]["get"]
+    update:
+      x-speakeasy-name-override: deployByTagOrUuid
+    x-speakeasy-metadata:
+      after: sdk.deployments.deployByTagOrUuid()
+      before: sdk.Deployments.deploy-by-tag-or-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/envs/{env_uuid}"]["delete"]
+    update:
+      x-speakeasy-name-override: deleteEnv
+    x-speakeasy-metadata:
+      after: sdk.applications.deleteEnv()
+      before: sdk.Applications.delete-env-by-application-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/dockerfile"]["post"]
+    update:
+      x-speakeasy-name-override: createDockerfile
+    x-speakeasy-metadata:
+      after: sdk.applications.createDockerfile()
+      before: sdk.Applications.create-dockerfile-application()
+      type: method-name
+  - target: $["paths"]["/servers"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.servers.list()
+      before: sdk.Servers.list-servers()
+      type: method-name
+  - target: $["paths"]["/databases/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.databases.get()
+      before: sdk.Databases.get-database-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications/{uuid}/envs"]["post"]
+    update:
+      x-speakeasy-name-override: createEnv
+    x-speakeasy-metadata:
+      after: sdk.applications.createEnv()
+      before: sdk.Applications.create-env-by-application-uuid()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.services.get()
+      before: sdk.Services.get-service-by-uuid()
+      type: method-name
+  - target: $["paths"]["/applications"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.applications.list()
+      before: sdk.Applications.list-applications()
+      type: method-name
+  - target: $["paths"]["/services/{uuid}/restart"]["get"]
+    update:
+      x-speakeasy-name-override: restart
+    x-speakeasy-metadata:
+      after: sdk.services.restart()
+      before: sdk.Services.restart-service-by-uuid()
+      type: method-name
+  - target: $["paths"]["/health"]["get"]
+    update:
+      x-speakeasy-group: health
+      x-speakeasy-name-override: check
+    x-speakeasy-metadata:
+      after: sdk.health.check()
+      before: sdk.<no_group>.healthcheck()
+      type: method-name
+  - target: $["paths"]["/databases/postgresql"]["post"]
+    update:
+      x-speakeasy-name-override: createPostgresql
+    x-speakeasy-metadata:
+      after: sdk.databases.createPostgresql()
+      before: sdk.Databases.create-database-postgresql()
+      type: method-name
+  - target: $["paths"]["/security/keys"]["patch"]
+    update:
+      x-speakeasy-group: privateKeys
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.privateKeys.update()
+      before: sdk.Private Keys.update-private-key()
+      type: method-name

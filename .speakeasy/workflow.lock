@@ -1,0 +1,36 @@
+speakeasyVersion: 1.441.0
+sources:
+    Coolify-OAS:
+        sourceNamespace: coolify-oas
+        sourceRevisionDigest: sha256:6f90b2e956ab8c0b49b28a442b3315a73ef04bedc9caf4a55d496547cd6ef283
+        sourceBlobDigest: sha256:8b9fa64561d834d376afef39a6ebecd3814c914ca8f134b1cea2eca72cf33919
+        tags:
+            - latest
+targets:
+    coolify:
+        source: Coolify-OAS
+        sourceNamespace: coolify-oas
+        sourceRevisionDigest: sha256:6f90b2e956ab8c0b49b28a442b3315a73ef04bedc9caf4a55d496547cd6ef283
+        sourceBlobDigest: sha256:8b9fa64561d834d376afef39a6ebecd3814c914ca8f134b1cea2eca72cf33919
+        codeSamplesNamespace: coolify-oas-code-samples
+        codeSamplesRevisionDigest: sha256:f093bd5deaaeea41ab713948ef4b25ccffc80af0e111f75b772fc27e1b03b54d
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Coolify-OAS:
+            inputs:
+                - location: ./OpenAPI.yaml
+            overlays:
+                - location: ./speakeasy-suggested-name-overlay.yaml
+                - location: ./speakeasy-suggested-error-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/lukehagar/lukehagar/coolify-oas
+    targets:
+        coolify:
+            target: typescript
+            source: Coolify-OAS
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/lukehagar/lukehagar/coolify-oas-code-samples
+                blocking: false

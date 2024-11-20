@@ -1,0 +1,65 @@
+# Team
+
+Team model
+
+## Example Usage
+
+```typescript
+import { Team } from "coolify/models/components";
+
+let value: Team = {};
+```
+
+## Fields
+
+| Field                                                        | Type                                                         | Required                                                     | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `id`                                                         | *number*                                                     | :heavy_minus_sign:                                           | The unique identifier of the team.                           |
+| `name`                                                       | *string*                                                     | :heavy_minus_sign:                                           | The name of the team.                                        |
+| `description`                                                | *string*                                                     | :heavy_minus_sign:                                           | The description of the team.                                 |
+| `personalTeam`                                               | *boolean*                                                    | :heavy_minus_sign:                                           | Whether the team is personal or not.                         |
+| `createdAt`                                                  | *string*                                                     | :heavy_minus_sign:                                           | The date and time the team was created.                      |
+| `updatedAt`                                                  | *string*                                                     | :heavy_minus_sign:                                           | The date and time the team was last updated.                 |
+| `smtpEnabled`                                                | *boolean*                                                    | :heavy_minus_sign:                                           | Whether SMTP is enabled or not.                              |
+| `smtpFromAddress`                                            | *string*                                                     | :heavy_minus_sign:                                           | The email address to send emails from.                       |
+| `smtpFromName`                                               | *string*                                                     | :heavy_minus_sign:                                           | The name to send emails from.                                |
+| `smtpRecipients`                                             | *string*                                                     | :heavy_minus_sign:                                           | The email addresses to send emails to.                       |
+| `smtpHost`                                                   | *string*                                                     | :heavy_minus_sign:                                           | The SMTP host.                                               |
+| `smtpPort`                                                   | *string*                                                     | :heavy_minus_sign:                                           | The SMTP port.                                               |
+| `smtpEncryption`                                             | *string*                                                     | :heavy_minus_sign:                                           | The SMTP encryption.                                         |
+| `smtpUsername`                                               | *string*                                                     | :heavy_minus_sign:                                           | The SMTP username.                                           |
+| `smtpPassword`                                               | *string*                                                     | :heavy_minus_sign:                                           | The SMTP password.                                           |
+| `smtpTimeout`                                                | *string*                                                     | :heavy_minus_sign:                                           | The SMTP timeout.                                            |
+| `smtpNotificationsTest`                                      | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send test notifications via SMTP.                 |
+| `smtpNotificationsDeployments`                               | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send deployment notifications via SMTP.           |
+| `smtpNotificationsStatusChanges`                             | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send status change notifications via SMTP.        |
+| `smtpNotificationsScheduledTasks`                            | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send scheduled task notifications via SMTP.       |
+| `smtpNotificationsDatabaseBackups`                           | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send database backup notifications via SMTP.      |
+| `smtpNotificationsServerDiskUsage`                           | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send server disk usage notifications via SMTP.    |
+| `discordEnabled`                                             | *boolean*                                                    | :heavy_minus_sign:                                           | Whether Discord is enabled or not.                           |
+| `discordWebhookUrl`                                          | *string*                                                     | :heavy_minus_sign:                                           | The Discord webhook URL.                                     |
+| `discordNotificationsTest`                                   | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send test notifications via Discord.              |
+| `discordNotificationsDeployments`                            | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send deployment notifications via Discord.        |
+| `discordNotificationsStatusChanges`                          | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send status change notifications via Discord.     |
+| `discordNotificationsDatabaseBackups`                        | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send database backup notifications via Discord.   |
+| `discordNotificationsScheduledTasks`                         | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send scheduled task notifications via Discord.    |
+| `discordNotificationsServerDiskUsage`                        | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send server disk usage notifications via Discord. |
+| `showBoarding`                                               | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to show the boarding screen or not.                  |
+| `resendEnabled`                                              | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to enable resending or not.                          |
+| `resendApiKey`                                               | *string*                                                     | :heavy_minus_sign:                                           | The resending API key.                                       |
+| `useInstanceEmailSettings`                                   | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to use instance email settings or not.               |
+| `telegramEnabled`                                            | *boolean*                                                    | :heavy_minus_sign:                                           | Whether Telegram is enabled or not.                          |
+| `telegramToken`                                              | *string*                                                     | :heavy_minus_sign:                                           | The Telegram token.                                          |
+| `telegramChatId`                                             | *string*                                                     | :heavy_minus_sign:                                           | The Telegram chat ID.                                        |
+| `telegramNotificationsTest`                                  | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send test notifications via Telegram.             |
+| `telegramNotificationsDeployments`                           | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send deployment notifications via Telegram.       |
+| `telegramNotificationsStatusChanges`                         | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send status change notifications via Telegram.    |
+| `telegramNotificationsDatabaseBackups`                       | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send database backup notifications via Telegram.  |
+| `telegramNotificationsTestMessageThreadId`                   | *string*                                                     | :heavy_minus_sign:                                           | The Telegram test message thread ID.                         |
+| `telegramNotificationsDeploymentsMessageThreadId`            | *string*                                                     | :heavy_minus_sign:                                           | The Telegram deployment message thread ID.                   |
+| `telegramNotificationsStatusChangesMessageThreadId`          | *string*                                                     | :heavy_minus_sign:                                           | The Telegram status change message thread ID.                |
+| `telegramNotificationsDatabaseBackupsMessageThreadId`        | *string*                                                     | :heavy_minus_sign:                                           | The Telegram database backup message thread ID.              |
+| `customServerLimit`                                          | *string*                                                     | :heavy_minus_sign:                                           | The custom server limit.                                     |
+| `telegramNotificationsScheduledTasks`                        | *boolean*                                                    | :heavy_minus_sign:                                           | Whether to send scheduled task notifications via Telegram.   |
+| `telegramNotificationsScheduledTasksThreadId`                | *string*                                                     | :heavy_minus_sign:                                           | The Telegram scheduled task message thread ID.               |
+| `members`                                                    | [components.User](../../models/components/user.md)[]         | :heavy_minus_sign:                                           | The members of the team.                                     |
