@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="300px" src="https://coolify.io/docs/_astro/coolify-transparent.uB67yhAU.svg">
+    <img width="300px" src="https://avatars.githubusercontent.com/u/60715044">
     <h1>Coolify Typescript SDK</h1>
     <p><strong>Self-hosting with superpowers.</strong></p>
     <p>Developer-friendly & type-safe Typescript SDK specifically catered to leverage the <strong>Coolify</strong> API.</p>
