@@ -3,7 +3,7 @@ speakeasyVersion: latest
 sources:
     Coolify-OAS:
         inputs:
-            - location: ./OpenAPI.yaml
+            - location: https://raw.githubusercontent.com/coollabsio/coolify/refs/heads/main/openapi.yaml
         overlays:
             - location: ./speakeasy-suggested-name-overlay.yaml
             - location: ./speakeasy-suggested-error-overlay.yaml
